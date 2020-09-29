@@ -10,16 +10,20 @@ package javaapplication1;
  *
  * @author arvip
  */
+import javax.swing.JOptionPane;
+
 public class JavaApplication8 {
-    
-     public static void main(String[] args) {
-         
-        int letra=0;
-        for(int i=0; i<=255 ; i++ )
-            System.out.println("El codigo ASCII de la letra " + 
-                            letra + " es " + i);                           
-     } 
-         
+
+	public static void main(String[] args) {
+		String data = JOptionPane.showInputDialog("Input chars");
+		
+		System.out.println(data);   
+		 
+        for (int i = 0; i < data.length(); i++){
+            int as = data.charAt(i);
+            System.out.println(as);  
+        }
+	}
+
 }
-    
 
